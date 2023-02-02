@@ -564,5 +564,5 @@ func createConfig(addrs []string, options *Config) etcd.Config {
 
 // normalize the key for usage in Etcd.
 func normalize(key string) string {
-	return strings.TrimPrefix(key, "/")
+	return key
 }
